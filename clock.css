@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    /* Arrange heading and clock vertically */
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(130deg, #eb4ae0, #136da5);
+    font-family: 'Times New Roman', Times, serif;
+    /* color: #fff; */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 80px;
+    color : rgb(177, 61, 133);
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in; 
+    font-size: 60px;
+  }
+  
+  h1:hover {
+    border-bottom: 3px solid #7b34d3; /* Border appears on hover */
+    padding-bottom: 8px; 
+    background-color: white;
+    color: black;
+    
+  }
+  
+  .clock {
+    font-size: 5rem;
+    color : rgb(177, 61, 133);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    
+
+  }
+  .clock:hover {
+  background: linear-gradient(135deg, #a6b831, #d0661a);
+  color: black;
+  
+
+
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem; /* Smaller font size for small devices */
+    }
+  
+    .clock {
+      font-size: 2rem; /* Smaller font size for small devices */
+      padding: 15px 30px;
+    }
+  }
